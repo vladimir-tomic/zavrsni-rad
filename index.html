@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Architect Website</title>
+    <title>Arhitektura i Dizajn</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -15,19 +15,7 @@
     />
   </head>
   <body>
-    <div class="spinner-container">
-      <div class="circles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-
+<!-- linije za hamburger menu-->
     <div class="container">
       <div class="hamburger-menu">
         <div class="line line-1"></div>
@@ -35,52 +23,52 @@
         <div class="line line-3"></div>
         <span>Close</span>
       </div>
-      <header class="header">
+      <header class="header" id="header">
         <div class="img-wrapper">
           <img src="images/bg.jpg" />
         </div>
+        <!-- banner -->
         <div class="banner">
-          <h1>Architecture & Interior Design</h1>
+          <h1>Arhitektura & dizajn enteriera</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <button>Discover now</button>
+          <button>
+            <a href="https://sr.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0" target="_blank">Saznaj više</a>
+          </button>
         </div>
       </header>
 
       <section class="sidebar">
         <ul class="menu">
           <li class="menu-item">
-            <a href="#" class="menu-link" data-content="Home">Home</a>
+            <a href="#header" class="menu-link" data-content="Početna">Početna</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link" data-content="About Us">About Us</a>
+            <a href="#about" class="menu-link" data-content="O Nama">O Nama</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link" data-content="Team">Team</a>
+            <a href="#team" class="menu-link" data-content="Tim">Tim</a>
           </li>
           <li class="menu-item">
-            <a href="#" class="menu-link" data-content="Pricing">Pricing</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link" data-content="Contact">Contact</a>
+            <a href="#contact" class="menu-link" data-content="Kontakt">Kontakt</a>
           </li>
         </ul>
         <div class="social-media">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
       </section>
-
-      <section class="about-us">
+<!-- about section -->
+      <section class="about-us" id="about">
         <div class="section-header">
-          <h1 class="section-heading">About Us</h1>
+          <h1 class="section-heading">O Nama</h1>
           <div class="underline"></div>
         </div>
         <div class="services">
           <div class="service">
             <div class="service-header">
               <i class="fas fa-pen-nib"></i>
-              <h3>Interior</h3>
+              <h3>Enterier</h3>
             </div>
             <p class="service-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -91,7 +79,7 @@
           <div class="service">
             <div class="service-header">
               <i class="fas fa-paint-roller"></i>
-              <h3>Exterior</h3>
+              <h3>Eksterier</h3>
             </div>
             <p class="service-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -102,7 +90,7 @@
           <div class="service">
             <div class="service-header">
               <i class="fas fa-pencil-alt"></i>
-              <h3>Design</h3>
+              <h3>Dizajn</h3>
             </div>
             <p class="service-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -113,7 +101,7 @@
           <div class="service">
             <div class="service-header">
               <i class="fas fa-paint-brush"></i>
-              <h3>Decoration</h3>
+              <h3>Dekoracija</h3>
             </div>
             <p class="service-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -124,7 +112,7 @@
           <div class="service">
             <div class="service-header">
               <i class="fas fa-ruler-combined"></i>
-              <h3>Planning</h3>
+              <h3>Planiranje</h3>
             </div>
             <p class="service-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -135,7 +123,7 @@
           <div class="service">
             <div class="service-header">
               <i class="far fa-building"></i>
-              <h3>Execution</h3>
+              <h3>Izvrsenje</h3>
             </div>
             <p class="service-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -148,10 +136,10 @@
           </div>
         </div>
       </section>
-
-      <section class="team">
+<!-- team section -->
+      <section class="team" id="team">
         <div class="section-header">
-          <h1 class="section-heading">Our Team</h1>
+          <h1 class="section-heading">Naš Tim</h1>
           <div class="underline"></div>
         </div>
         <div class="cards-wrapper">
@@ -161,12 +149,14 @@
             </div>
             <div class="card-info">
               <h2>John Smith</h2>
-              <h3>CEO</h3>
+              <h3>Izvršni Direktor</h3>
               <p>
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Asperiores, impedit!"
               </p>
-              <button>Read More</button>
+              <button>
+                <a href="https://rs.linkedin.com/" target="_blank">Više</a>
+              </button>
             </div>
           </div>
           <div class="card" data-tilt>
@@ -175,12 +165,14 @@
             </div>
             <div class="card-info">
               <h2>Ann Brown</h2>
-              <h3>Designer</h3>
+              <h3>Dizajner</h3>
               <p>
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Asperiores, impedit!"
               </p>
-              <button>Read More</button>
+              <button>
+                <a href="https://rs.linkedin.com/" target="_blank">Više</a>
+              </button>
             </div>
           </div>
           <div class="card" data-tilt>
@@ -189,69 +181,40 @@
             </div>
             <div class="card-info">
               <h2>Mary Doe</h2>
-              <h3>Architect</h3>
+              <h3>Arhitekta</h3>
               <p>
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Asperiores, impedit!"
               </p>
-              <button>Read More</button>
+              <button>
+                <a href="https://rs.linkedin.com/" target="_blank">Više</a>
+              </button>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="contact">
+<!-- contact section -->
+      <section class="contact" id="contact">
         <div class="contact-wrapper">
           <div class="contact-left"></div>
           <div class="contact-right">
-            <h1 class="contact-heading">Contact</h1>
+            <h1 class="contact-heading">Kontakt</h1>
             <form  action="https://formspree.io/f/moqpjgrb"
             method="POST">
-              <label for="fname">First name:</label>
-              <input type="text" id="fname" name="fname"><br><br>
-              <label for="lname">Last name:</label>
-              <input type="text" id="lname" name="lname"><br><br>
-              <input type="submit" value="Submit">
-            </form>
-            <!-- <form  action="https://formspree.io/f/moqpjgrb"
-            method="POST">
-            <div class="input-group">
-            <label>
-              Your email:
-              <input type="text" name="_replyto" class="field">
-            </label>
-          </div>
-          <div class="input-group">
-            <input type="email" class="field" />
-            <label class="input-label">Email</label>
-          </div>
-          <div class="input-group">
-            <textarea class="field"></textarea>
-            <label class="message">Message</label>
-          </div> -->
-            <!-- <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label> -->
-          
-            <!-- your other form fields go here -->
-          
-            <!-- <button type="submit" class="submit-btn">Send</button> -->
-          
-              <!-- <div class="input-group">
-                <input type="text" class="field" />
-                <label class="input-label">Full Name</label>
+              <div class="input-group">
+                <input type="text" name="fname" class="field" />
+                <label for="fname" class="input-label">Ime i Prezime</label>
               </div>
               <div class="input-group">
                 <input type="email" class="field" />
                 <label class="input-label">Email</label>
-              </div> -->
-              <!-- <div class="input-group">
-                <textarea class="field"></textarea>
-                <label class="message">Message</label>
-              </div> -->
-              <!-- <input type="submit" class="submit-btn" value="Submit" /> -->
-            <!-- </form> -->
+              </div>
+              <div class="input-group">
+                <textarea class="field" name="message"></textarea>
+                <label class="message">Poruka</label>
+              </div>
+              <input type="submit" class="submit-btn" value="Pošaljite" />
+            </form>
           </div>
         </div>
       </section>
@@ -259,12 +222,12 @@
       <footer class="footer">
         <div class="footer-content">
           <p class="copyright">
-            Copyright &copy; 2020, CodeAndCreate - All Rights Reserved
+            Copyright &copy; 2020, Vladimir Tomić IN 54/17
           </p>
           <div class="social-list">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </footer>
